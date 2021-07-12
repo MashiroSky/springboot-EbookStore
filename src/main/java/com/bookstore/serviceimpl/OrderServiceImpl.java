@@ -60,5 +60,10 @@ public class OrderServiceImpl implements OrderService {
         return ret;
     }
 
+    @Override
+    public List<Order> FindAll() {
+        return orderRepository.findAll();
+    }
+
 
 }

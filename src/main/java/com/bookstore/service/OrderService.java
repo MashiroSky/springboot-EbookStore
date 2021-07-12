@@ -10,4 +10,5 @@ public interface OrderService {
     List<Order> FindAllByUserId(int userId);
     boolean Insert(int orderID, int userID, int bookID);
     List<Book> FindByOrderID(int orderID);
+    List<Order> FindAll();
 }

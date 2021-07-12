@@ -11,4 +11,7 @@ public interface BookinOrderRepository extends JpaRepository<BookinOrder, Intege
 
     @Query("from BookinOrder where orderID = ?1")
     List<BookinOrder> findAllByOrderID(int orderID);
+
+    @Query("from BookinOrder where bookID = ?1")
+    List<BookinOrder> findByBookId(int id);
 }

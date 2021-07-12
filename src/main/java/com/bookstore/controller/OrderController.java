@@ -38,4 +38,8 @@ public class OrderController {
         return orderService.FindAllByUserId(userID);
     }
 
+    @GetMapping("/allOrderList")
+    public List<Order> FindAll() {
+        return orderService.FindAll();
+    }
 }
